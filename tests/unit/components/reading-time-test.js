@@ -1,3 +1,4 @@
+/*global $*/
 import { test, moduleForComponent } from 'ember-qunit';
 import Ember from 'ember';
 
