@@ -6,7 +6,7 @@ This is a wip implementation for the nice reading-time @michael-lynch plugin to 
 
 ### Run
 
-* `npm install 'ember-cli-reading-time'`
+* `npm install --save-dev 'ember-cli-reading-time'`
 * `ember generate ember-cli-reading-time`
 
 ### Add in your handlebar template
