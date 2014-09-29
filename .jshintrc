@@ -1,7 +1,9 @@
 {
   "predef": {
     "document": true,
-    "window": true
+    "window": true,
+    "module": true,
+    "$": false
   },
   "browser" : true,
   "boss" : true,
