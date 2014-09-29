@@ -1,4 +1,5 @@
 # Ember-cli-reading-time
+[![Build Status](https://travis-ci.org/borisrorsvort/ember-cli-reading-time.svg?branch=master)](https://travis-ci.org/borisrorsvort/ember-cli-reading-time)
 
 This is a wip implementation for the nice reading-time @michael-lynch plugin to display estimated reading time a piece of text.
 
