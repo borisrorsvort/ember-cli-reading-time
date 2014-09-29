@@ -1,7 +1,7 @@
 {
-  "name": "dummy",
+  "name": "ember-cli-reading-time",
   "version": "0.0.0",
-  "private": true,
+  "description": "An ember-cli addon to integrate with reading-time.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,10 +11,22 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borisrorsvort/ember-cli-reading-time"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  },
+  "keywords": [
+    "ember-addon",
+    "ember-cli",
+    "reading-time",
+    "ember-cli-reading-time"
+  ],
   "author": "Boris Rorsvort",
   "license": "MIT",
   "devDependencies": {
@@ -29,10 +41,7 @@
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },
-  "keywords": [
-    "ember-addon"
-  ],
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
+  "bugs": {
+    "url": "https://github.com/borisrorsvort/ember-cli-reading-time/issues"
   }
 }
