@@ -4,6 +4,6 @@ module.exports = {
   afterInstall: function() {
     var that = this;
 
-    return this.addBowerPackageToProject('reading-time.js');
+    return this.addBowerPackageToProject('reading-time');
   }
 };

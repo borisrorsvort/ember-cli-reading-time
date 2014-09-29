@@ -1,7 +1,7 @@
 import Em from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'div',
+  tagName: 'span',
   classNames: ['eta'],
   didInsertElement: function () {
     var textTarget = this.get('textTarget');

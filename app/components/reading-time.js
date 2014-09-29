@@ -1,4 +1,4 @@
 import Em from 'ember';
-import ReadingTime from 'ember-cli-reading-time/components/reading-time';
+import ReadingTimeComponent from 'ember-cli-reading-time/components/reading-time';
 
-export default ReadingTime;
+export default ReadingTimeComponent;
