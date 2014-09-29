@@ -1,25 +1,27 @@
 # Ember-cli-reading-time
 
-This README outlines the details of collaborating on this Ember addon.
+This is a wip implementation for the nice reading-time @michael-lynch plugin to display estimated reading time a piece of text.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+### Run
 
-## Running
+* `npm install 'ember-cli-reading-time'`
+* `ember generate ember-cli-reading-time`
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+### Add in your handlebar template
 
-## Running Tests
+```
+<article>
+{{reading-time textTarget='article'}}
+</article>
+```
+
+## Contributing
+
+As this is a wip, please post new issues, feature request or even make pull requests
+
+### Running Tests
 
 * `ember test`
 * `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
