@@ -29,9 +29,8 @@ test("displaying etr", function(){
 
   Ember.run(function(){
     that.$().wrap("<div class='wrapper'></div>").after('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+    component.send('displayETR');
   });
 
-  component.send('displayETR');
-
-  ok($('.eta').text().length > 0, "It's displayed the etr, yeah!");
+  ok($('.eta').text().length > 0);
 });

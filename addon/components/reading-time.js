@@ -16,31 +16,39 @@ export default Ember.Component.extend({
   textTarget: 'article',
 
   didInsertElement: function () {
-    var that = this,
-        textTarget = this.get('textTarget'),
-        params = {},
-        options = [
-          'wordCountTarget',
-          'remotePath',
-          'remoteTarget',
-          'round',
-          'lang',
-          'lessThanAMinuteString',
-          'prependTimeString',
-          'prependWordString',
-          'textTarget',
-          'wordString'
-        ];
-
+    var that = this;
     Ember.run.scheduleOnce('afterRender', function () {
-      options.forEach(function (option) {
-        var optionValue = that.get(option);
-        if (optionValue !== null) {
-          params[option] = optionValue;
-        }
-      });
-      console.log(params);
-      $(textTarget).readingTime(params);
+      that.send('displayETR');
     });
+  },
+
+  actions: {
+    displayETR: function () {
+      var that = this,
+          textTarget = this.get('textTarget'),
+          params = {},
+          options = [
+            'wordCountTarget',
+            'remotePath',
+            'remoteTarget',
+            'round',
+            'lang',
+            'lessThanAMinuteString',
+            'prependTimeString',
+            'prependWordString',
+            'textTarget',
+            'wordString'
+          ];
+
+      Ember.run.scheduleOnce('afterRender', function () {
+        options.forEach(function (option) {
+          var optionValue = that.get(option);
+          if (optionValue !== null) {
+            params[option] = optionValue;
+          }
+        });
+        $(textTarget).readingTime(params);
+      });
+    }
   }
 });
