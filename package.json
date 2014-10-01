@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-reading-time",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An ember-cli addon to integrate with reading-time.js",
   "directories": {
     "doc": "doc",
